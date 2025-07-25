@@ -3,6 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import AnimatedSection from '@/components/AnimatedSection';
 import { skills } from '@/data/portfolio';
+import sageX3Image from '@/assets/sage-x3-consultant.jpg';
+import odooImage from '@/assets/odoo-consultant.jpg';
+import aiImage from '@/assets/ai-consultant.jpg';
 
 const Skills = () => {
   const skillCategories = {
@@ -109,11 +112,15 @@ const Skills = () => {
             <AnimatedSection delay={100}>
               <Card className="shadow-card hover:shadow-elegant transition-all duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Code size={24} className="text-primary" />
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-lg overflow-hidden">
+                    <img 
+                      src={sageX3Image} 
+                      alt="Sage X3 Technical Consultant" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">React Certification</h3>
-                  <p className="text-muted-foreground">Advanced React Patterns and Performance</p>
+                  <h3 className="text-xl font-semibold mb-2">Sage X3 Technical Consultant</h3>
+                  <p className="text-muted-foreground">ERP Implementation and Business Process Optimization</p>
                 </CardContent>
               </Card>
             </AnimatedSection>
@@ -121,11 +128,15 @@ const Skills = () => {
             <AnimatedSection delay={200}>
               <Card className="shadow-card hover:shadow-elegant transition-all duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Database size={24} className="text-accent" />
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-lg overflow-hidden">
+                    <img 
+                      src={odooImage} 
+                      alt="Odoo Consultant" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">AWS Solutions Architect</h3>
-                  <p className="text-muted-foreground">Cloud Architecture and DevOps</p>
+                  <h3 className="text-xl font-semibold mb-2">Odoo Consultant</h3>
+                  <p className="text-muted-foreground">Open Source ERP Solutions and Customization</p>
                 </CardContent>
               </Card>
             </AnimatedSection>
@@ -133,11 +144,15 @@ const Skills = () => {
             <AnimatedSection delay={300}>
               <Card className="shadow-card hover:shadow-elegant transition-all duration-300">
                 <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Palette size={24} className="text-green-500" />
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-lg overflow-hidden">
+                    <img 
+                      src={aiImage} 
+                      alt="AI Consultant" 
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">UX Design Principles</h3>
-                  <p className="text-muted-foreground">Human-Centered Design Approach</p>
+                  <h3 className="text-xl font-semibold mb-2">AI</h3>
+                  <p className="text-muted-foreground">Machine Learning and Intelligent System Development</p>
                 </CardContent>
               </Card>
             </AnimatedSection>
