@@ -7,6 +7,7 @@ import { projects, personalInfo } from '@/data/portfolio';
 
 
 
+
 const Home = () => {
   const featuredProjects = projects.filter(project => project.featured);
 
