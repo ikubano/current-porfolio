@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
 import AnimatedSection from '@/components/AnimatedSection';
 import { skills } from '@/data/portfolio';
+
 import sageX3Image from '@/assets/sage-x3-consultant.png';
 import odooImage from '@/assets/odoo_logo.png';
 import aiImage from '@/assets/AI-image.png';
