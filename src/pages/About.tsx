@@ -2,35 +2,31 @@ import { MapPin, Mail, Phone, Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import AnimatedSection from '@/components/AnimatedSection';
 import { personalInfo } from '@/data/portfolio';
+import MyImage from '@/assets/WhatsApp Image 2025-07-25 at 12.53.25.jpeg';
+
 
 const About = () => {
   const experiences = [
     {
-      company: "Tech Innovations Inc.",
-      position: "Senior Full Stack Developer",
-      period: "2022 - Present",
-      description: "Lead developer for multiple high-traffic web applications. Mentored junior developers and implemented modern development practices."
+      company: "Gravity Solutions Limited",
+      position: "Software Developer",
+      period: "2023 - Present",
+      description: "Designed and built responsive web applications using different frameworks like React. Participated in code reviews, testing, and continuous deployment pipelines."
     },
     {
-      company: "Digital Solutions LLC",
-      position: "Full Stack Developer",
-      period: "2020 - 2022",
-      description: "Developed and maintained React-based applications with Node.js backends. Collaborated with design teams to implement responsive UI/UX."
+      company: "Gravity Solutions Limited",
+      position: "ERP Consultant",
+      period: "2023 - Present",
+      description: "Led end-to-end ERP implementations, customized modules to fit business needs, migrated legacy data, trained users, integrated third-party tools, and providing support to end-users. Specialized in Sage X3 and Odoo ERP systems."
     },
-    {
-      company: "StartupXYZ",
-      position: "Frontend Developer",
-      period: "2019 - 2020",
-      description: "Built responsive web applications using React and modern JavaScript. Focused on performance optimization and user experience."
-    }
   ];
 
   const education = [
     {
-      school: "University of California, Berkeley",
+      school: "Laikipia University",
       degree: "Bachelor of Science in Computer Science",
-      period: "2015 - 2019",
-      description: "Graduated magna cum laude. Specialized in web technologies and software engineering."
+      period: "2020 - 2024",
+      description: "Specialized in web technologies and software development. Studied core principles of computer science including software development, algorithms, data structures, databases, and systems architecture, with hands-on experience in real-world projects and teamwork."
     }
   ];
 
@@ -41,11 +37,10 @@ const About = () => {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl font-bold mb-6">About Me</h1>
+              <h1 className="text-5xl font-bold mb-6">"The Mind Behind the Code."</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                I'm a passionate full-stack developer with over 5 years of experience creating 
-                digital solutions that matter. I believe in writing clean, efficient code and 
-                building user experiences that delight and inspire.
+                I'm a solution-driven tech enthusiast with a strong background in software development, ERP systems, AI, and full-stack development. 
+                I love blending business logic with modern technologies to build impactful digital experiences.
               </p>
             </div>
           </AnimatedSection>
@@ -72,7 +67,7 @@ const About = () => {
                   </p>
                   <p>
                     When I'm not coding, you can find me exploring new technologies, contributing 
-                    to open-source projects, or enjoying the beautiful outdoors of California.
+                    to open-source projects, or enjoying the beautiful outdoors of Nairobi.
                   </p>
                 </div>
                 
@@ -101,7 +96,14 @@ const About = () => {
               <div className="relative">
                 <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary to-accent p-1">
                   <div className="w-full h-full rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
-                    <div className="text-6xl">👨‍💻</div>
+                    <div className="text-6xl">
+                      {/* Replace emoji with image */}
+                     <img
+                       src={MyImage}  // 👈 Replace with your actual image path
+                       alt="Developer Icon"
+                       className=""
+                     />
+                    </div>
                   </div>
                 </div>
                 {/* Decorative elements */}

@@ -18,9 +18,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Alex Johnson</h3>
+            <h3 className="text-2xl font-bold mb-4">Ian Mwanzi</h3>
             <p className="text-gray-300 mb-6 max-w-md">
-              Full Stack Developer passionate about creating beautiful, functional web applications 
+              Full Stack Developer passionate about creating beautiful, functional web applications
               that make a difference.
             </p>
             <div className="flex space-x-4">
@@ -64,9 +64,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <div className="space-y-2 text-gray-300">
-              <p>San Francisco, CA</p>
-              <p>alex.johnson@example.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>Nairobi, Kenya</p>
+              <p>ianmwanzi0@gmail.com</p>
+              <p>+254 757 767 215</p>
             </div>
           </div>
         </div>
@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Alex Johnson. All rights reserved.
+            © {currentYear} Ian Mwanzi. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm flex items-center mt-4 md:mt-0">
             Made with <Heart size={16} className="mx-1 text-red-500" /> using React & TypeScript

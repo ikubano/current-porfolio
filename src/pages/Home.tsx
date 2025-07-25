@@ -5,6 +5,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import AnimatedSection from '@/components/AnimatedSection';
 import { projects, personalInfo } from '@/data/portfolio';
 
+
+
 const Home = () => {
   const featuredProjects = projects.filter(project => project.featured);
 

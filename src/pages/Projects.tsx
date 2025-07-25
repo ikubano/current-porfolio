@@ -6,8 +6,8 @@ import AnimatedSection from '@/components/AnimatedSection';
 import { projects } from '@/data/portfolio';
 
 // Import project images
-import ecommerceImg from '@/assets/project-ecommerce.jpg';
-import taskappImg from '@/assets/project-taskapp.jpg';
+import ecommerceImg from '@/assets/image.png';
+import taskappImg from '@/assets/view-tasks2x.png';
 import weatherImg from '@/assets/project-weather.jpg';
 import portfolioImg from '@/assets/project-portfolio.jpg';
 
@@ -16,8 +16,8 @@ const Projects = () => {
 
   // Map project images
   const projectImages = {
-    '/src/assets/project-ecommerce.jpg': ecommerceImg,
-    '/src/assets/project-taskapp.jpg': taskappImg,
+    '/src/assets/image.png': ecommerceImg,
+    '/src/assets/view-tasks2x.png': taskappImg,
     '/src/assets/project-weather.jpg': weatherImg,
     '/src/assets/project-portfolio.jpg': portfolioImg,
   };
@@ -42,10 +42,9 @@ const Projects = () => {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl font-bold mb-6">My Projects</h1>
+              <h1 className="text-5xl font-bold mb-6">"Real Projects. Real Impact."</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                A collection of projects that showcase my skills in web development, 
-                from concept to deployment.
+                A showcase of the applications, systems, and integrations I’ve built — blending creativity, performance, and problem-solving.
               </p>
             </div>
           </AnimatedSection>

@@ -42,7 +42,7 @@ const Navigation = () => {
             to="/" 
             className="text-xl font-bold text-primary hover:text-primary-glow transition-colors"
           >
-            Alex Johnson
+            Ian Mwanzi
           </Link>
 
           {/* Desktop Navigation */}

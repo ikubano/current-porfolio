@@ -26,7 +26,7 @@ export const projects: Project[] = [
     id: 1,
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce platform with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-    image: "/src/assets/project-ecommerce.jpg",
+    image: "/src/assets/image.png", // Replace with your actual image path
     technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
     demoUrl: "https://demo.example.com",
     githubUrl: "https://github.com/username/ecommerce",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Task Management App",
     description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    image: "/src/assets/project-taskapp.jpg",
+    image: "/src/assets/view-tasks2x.png", // Replace with your actual image path
     technologies: ["React", "TypeScript", "Firebase", "Material-UI"],
     demoUrl: "https://taskapp.example.com",
     githubUrl: "https://github.com/username/taskapp",
@@ -72,20 +72,20 @@ export const skills: Skill[] = [
   { name: "HTML5", level: 98, category: "frontend" },
   { name: "CSS3", level: 95, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
-  
+
   // Backend
   { name: "Node.js", level: 85, category: "backend" },
   { name: "Express.js", level: 80, category: "backend" },
   { name: "MongoDB", level: 75, category: "backend" },
   { name: "PostgreSQL", level: 70, category: "backend" },
   { name: "Firebase", level: 85, category: "backend" },
-  
+
   // Tools
   { name: "Git", level: 90, category: "tools" },
   { name: "Webpack", level: 75, category: "tools" },
   { name: "Docker", level: 70, category: "tools" },
   { name: "VS Code", level: 95, category: "tools" },
-  
+
   // Design
   { name: "Figma", level: 80, category: "design" },
   { name: "Adobe XD", level: 75, category: "design" },
@@ -110,17 +110,17 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Email",
-    url: "mailto:your.email@example.com",
+    url: "mailto:your.ianmwanzi0@gmail.com",
     icon: "Mail"
   }
 ];
 
 export const personalInfo = {
-  name: "Alex Johnson",
-  title: "Full Stack Developer",
-  bio: "Passionate full-stack developer with 5+ years of experience creating beautiful, functional web applications. I love turning complex problems into simple, elegant solutions.",
-  location: "San Francisco, CA",
-  email: "alex.johnson@example.com",
-  phone: "+1 (555) 123-4567",
+  name: "Ian Mwanzi",
+  title: "Software Developer",
+  bio: "Passionate software developer with 2+ years of experience creating beautiful, functional web applications. I love turning complex problems into simple, elegant solutions.",
+  location: "Nairobi, Kenya",
+  email: "ianmwanzi0@gmail.com",
+  phone: "+254757 767 215",
   resume: "/resume.pdf"
 };
