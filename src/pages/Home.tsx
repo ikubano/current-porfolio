@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import AnimatedSection from '@/components/AnimatedSection';
 import { projects, personalInfo } from '@/data/portfolio';
+import image from '/src/assets/image.png';
 
 
 
@@ -87,7 +88,7 @@ const Home = () => {
                 <Card className="group overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-video overflow-hidden">
                     <img
-                      src={project.image}
+                      src={image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
