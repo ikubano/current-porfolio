@@ -56,8 +56,8 @@ Sent from your portfolio contact form
         'Authorization': `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: 'Contact Form <noreply@yourdomain.com>', // Update with your domain
-        to: ['your-email@example.com'], // Update with your email
+        from: 'Contact Form <noreply@yourdomain.com>', // Replace yourdomain.com with your actual domain
+        to: ['your-email@example.com'], // Replace with your actual email address
         subject: `Portfolio Contact: ${subject}`,
         text: emailContent,
       }),
