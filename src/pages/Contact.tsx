@@ -24,23 +24,31 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('/functions/v1/send-contact-email', {
+      // Using FormSubmit instead of your fetch call
+      const response = await fetch('https://formsubmit.co/ajax/ikubanoian@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          _template: 'table', // Better email formattings
+          _subject: `New Contact: ${formData.subject}`,
+          _replyto: formData.email,
+          _captcha: 'false' // Disable captcha for testing
+        })
       });
-
-      const result = await response.json();
 
       if (response.ok) {
         toast({
           title: "Message sent successfully!",
           description: "Thank you for reaching out. I'll get back to you soon.",
+          className: "bg-green-500 text-white",
         });
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
+        const result = await response.json();
         toast({
           title: "Failed to send message",
           description: result.error || "Please try again later.",
@@ -98,7 +106,7 @@ const Contact = () => {
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-5xl font-bold mb-6">Get In Touch</h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                I'd love to hear from you! Whether you have a project in mind, 
+                I'd love to hear from you! Whether you have a project in mind,
                 want to collaborate, or just say hello.
               </p>
             </div>
@@ -115,8 +123,8 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl font-bold mb-8">Let's Start a Conversation</h2>
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  I'm always open to discussing new opportunities, creative projects, 
-                  or potential collaborations. Feel free to reach out through any of 
+                  I'm always open to discussing new opportunities, creative projects,
+                  or potential collaborations. Feel free to reach out through any of
                   the channels below.
                 </p>
 
@@ -130,7 +138,7 @@ const Contact = () => {
                         <div>
                           <p className="text-sm text-muted-foreground">{info.label}</p>
                           {info.link ? (
-                            <a 
+                            <a
                               href={info.link}
                               className="text-lg font-medium hover:text-primary transition-colors"
                             >
@@ -149,7 +157,7 @@ const Contact = () => {
                   <div className="mt-12 p-6 bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl">
                     <h3 className="text-xl font-semibold mb-4">Quick Response</h3>
                     <p className="text-muted-foreground mb-4">
-                      I typically respond to emails within 24 hours. For urgent matters, 
+                      I typically respond to emails within 24 hours. For urgent matters,
                       feel free to call me directly.
                     </p>
                     <div className="flex items-center text-green-600">
@@ -166,7 +174,7 @@ const Contact = () => {
               <Card className="shadow-elegant">
                 <CardContent className="p-8">
                   <h3 className="text-2xl font-bold mb-6">Send Me a Message</h3>
-                  
+
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div>
@@ -195,7 +203,7 @@ const Contact = () => {
                         />
                       </div>
                     </div>
-                    
+
                     <div>
                       <Label htmlFor="subject">Subject *</Label>
                       <Input
@@ -208,7 +216,7 @@ const Contact = () => {
                         placeholder="What's this about?"
                       />
                     </div>
-                    
+
                     <div>
                       <Label htmlFor="message">Message *</Label>
                       <Textarea
@@ -221,11 +229,11 @@ const Contact = () => {
                         placeholder="Tell me about your project or just say hello!"
                       />
                     </div>
-                    
-                    <Button 
-                      type="submit" 
-                      size="lg" 
-                      className="w-full" 
+
+                    <Button
+                      type="submit"
+                      size="lg"
+                      className="w-full"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (
@@ -261,7 +269,7 @@ const Contact = () => {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-3">What's your typical project timeline?</h3>
                   <p className="text-muted-foreground">
-                    Most projects take 2-8 weeks depending on complexity. I'll provide 
+                    Most projects take 2-8 weeks depending on complexity. I'll provide
                     a detailed timeline after our initial consultation.
                   </p>
                 </CardContent>
@@ -273,7 +281,7 @@ const Contact = () => {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-3">Do you work with remote teams?</h3>
                   <p className="text-muted-foreground">
-                    Absolutely! I'm experienced in remote collaboration and use modern 
+                    Absolutely! I'm experienced in remote collaboration and use modern
                     tools to ensure smooth communication and project delivery.
                   </p>
                 </CardContent>
@@ -285,7 +293,7 @@ const Contact = () => {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-3">What technologies do you specialize in?</h3>
                   <p className="text-muted-foreground">
-                    I specialize in React, TypeScript, Node.js, and modern web technologies. 
+                    I specialize in React, TypeScript, Node.js, and modern web technologies.
                     Check out my Skills page for a complete overview.
                   </p>
                 </CardContent>
@@ -297,7 +305,7 @@ const Contact = () => {
                 <CardContent className="p-6">
                   <h3 className="text-lg font-semibold mb-3">Do you provide ongoing support?</h3>
                   <p className="text-muted-foreground">
-                    Yes! I offer maintenance packages and ongoing support to keep 
+                    Yes! I offer maintenance packages and ongoing support to keep
                     your applications running smoothly and up-to-date.
                   </p>
                 </CardContent>
