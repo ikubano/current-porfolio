@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import AnimatedSection from '@/components/AnimatedSection';
 import { projects, personalInfo } from '@/data/portfolio';
 import image from '/src/assets/image.png';
-import cvfile from "/src/assets/Ian's resume 2025-26.pdf"; // Ensure this path is correct
+import task from '/src/assets/view-tasks2x.png';
 
 
 
@@ -91,7 +91,7 @@ const Home = () => {
                 <Card className="group overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
                   <div className="aspect-video overflow-hidden">
                     <img
-                      src={image}
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
