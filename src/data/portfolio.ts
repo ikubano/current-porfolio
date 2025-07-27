@@ -122,5 +122,5 @@ export const personalInfo = {
   location: "Nairobi, Kenya",
   email: "ianmwanzi0@gmail.com",
   phone: "+254757 767 215",
-  resume: "/resume.pdf"
+  resume: "/src/assets/Ian's resume 2025-26.pdf", // Replace with your actual resume path
 };

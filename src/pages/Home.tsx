@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import AnimatedSection from '@/components/AnimatedSection';
 import { projects, personalInfo } from '@/data/portfolio';
 import image from '/src/assets/image.png';
+import cvfile from "/src/assets/Ian's resume 2025-26.pdf"; // Ensure this path is correct
 
 
 
@@ -56,8 +57,10 @@ const Home = () => {
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-                  <Download size={18} className="mr-2" />
-                  Download CV
+                  <a href={personalInfo.resume} download className="flex items-center">
+                    <Download size={18} className="mr-2" />
+                    Download CV
+                  </a>
                 </Button>
               </div>
             </AnimatedSection>

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import cvfile from "/src/assets/Ian's resume 2025-26.pdf"; // Ensure this path is correct
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,8 +64,10 @@ const Navigation = () => {
                 )}
               </Link>
             ))}
-            <Button variant="default" size="sm" className="ml-4">
-              Download CV
+            <Button variant="default" size="sm" className="w-full md:w-auto">
+              <a href={cvfile} download="Ian's 2025-CV.pdf" className="w-full">
+                Download CV
+               </a>
             </Button>
           </div>
 
