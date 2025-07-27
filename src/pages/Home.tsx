@@ -8,8 +8,6 @@ import image from '/src/assets/image.png';
 import task from '/src/assets/view-tasks2x.png';
 
 
-
-
 const Home = () => {
   const featuredProjects = projects.filter(project => project.featured);
 
