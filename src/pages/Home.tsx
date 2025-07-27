@@ -3,10 +3,8 @@ import { ArrowDown, Download, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import AnimatedSection from '@/components/AnimatedSection';
-import { projects, personalInfo } from '@/data/portfolio';
-import image from '/src/assets/image.png';
-import task from '/src/assets/view-tasks2x.png';
-
+import { personalInfo } from '@/data/portfolio';
+import { projects } from '@/data/portfolio';
 
 const Home = () => {
   const featuredProjects = projects.filter(project => project.featured);
