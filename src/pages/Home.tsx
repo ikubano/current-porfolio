@@ -56,7 +56,7 @@ const Home = () => {
                   </Link>
                 </Button>
                 <Button variant="outline" size="lg" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
-                  <a href={personalInfo.resume} download className="flex items-center">
+                  <a href={cvfile} download className="flex items-center">
                     <Download size={18} className="mr-2" />
                     Download CV
                   </a>
