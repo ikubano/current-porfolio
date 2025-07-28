@@ -6,6 +6,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 import { personalInfo } from '@/data/portfolio';
 import { projects } from '@/data/portfolio';
 import image from '/public/images/ecommerce.png';
+import cvfile from "/src/assets/Ian's resume 2025-26.pdf"; // Ensure this path is correct
 
 
 const Home = () => {
