@@ -6,6 +6,7 @@ import AnimatedSection from '@/components/AnimatedSection';
 import { personalInfo } from '@/data/portfolio';
 import { projects } from '@/data/portfolio';
 
+
 const Home = () => {
   const featuredProjects = projects.filter(project => project.featured);
 

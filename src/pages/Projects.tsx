@@ -6,8 +6,8 @@ import AnimatedSection from '@/components/AnimatedSection';
 import { projects } from '@/data/portfolio';
 
 // Import project images
-import ecommerceImg from '@/assets/image.png';
-import taskappImg from '@/assets/view-tasks2x.png';
+import ecommerceImg from '/public/images/ecommerce.png';
+import taskappImg from '/public/images/view-tasks2x.png';
 import weatherImg from '@/assets/project-weather.jpg';
 import portfolioImg from '@/assets/project-portfolio.jpg';
 
@@ -16,8 +16,8 @@ const Projects = () => {
 
   // Map project images
   const projectImages = {
-    '/src/assets/image.png': ecommerceImg,
-    '/src/assets/view-tasks2x.png': taskappImg,
+    '/public/images/ecommerce.png': ecommerceImg,
+    '/public/images/view-tasks2x.png': taskappImg,
     '/src/assets/project-weather.jpg': weatherImg,
     '/src/assets/project-portfolio.jpg': portfolioImg,
   };
