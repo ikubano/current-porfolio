@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import AnimatedSection from '@/components/AnimatedSection';
 import { personalInfo } from '@/data/portfolio';
 import { projects } from '@/data/portfolio';
+import image from '/public/images/ecommerce.png';
 
 
 const Home = () => {
