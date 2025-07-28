@@ -105,8 +105,8 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/username",
-    icon: "Twitter"
+    url: "https://x.com/",
+    icon: "X"
   },
   {
     name: "Email",
