@@ -85,7 +85,7 @@ const Home = () => {
             {featuredProjects.map((project, index) => (
               <AnimatedSection key={project.id} delay={index * 200}>
                 <Card className="group overflow-hidden shadow-elegant hover:shadow-glow transition-all duration-300 hover:-translate-y-2">
-                  <div className="aspect-video overflow-hidden">
+                   <div className="aspect-video overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}

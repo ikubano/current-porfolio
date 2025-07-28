@@ -26,7 +26,7 @@ export const projects: Project[] = [
     id: 1,
     title: "E-Commerce Platform",
     description: "A full-stack e-commerce platform with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-    image: "/src/assets/image.png", // Replace with your actual image path
+    image: "/src/assets/image.png", 
     technologies: ["React", "Node.js", "MongoDB", "Stripe", "Tailwind CSS"],
     demoUrl: "https://demo.example.com",
     githubUrl: "https://github.com/username/ecommerce",
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     id: 2,
     title: "Task Management App",
     description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-    image: "/src/assets/view-tasks2x.png", // Replace with your actual image path
+    image: "/src/assets/view-tasks2x.png",
     technologies: ["React", "TypeScript", "Firebase", "Material-UI"],
     demoUrl: "https://taskapp.example.com",
     githubUrl: "https://github.com/username/taskapp",
