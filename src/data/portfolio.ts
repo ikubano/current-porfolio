@@ -40,7 +40,7 @@ export const projects: Project[] = [
     technologies: ["React", "TypeScript", "Firebase", "Material-UI"],
     demoUrl: "https://taskapp.example.com",
     githubUrl: "https://github.com/username/taskapp",
-    featured: false
+    featured: true
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     technologies: ["React", "Chart.js", "OpenWeather API", "CSS Grid"],
     demoUrl: "https://weather.example.com",
     githubUrl: "https://github.com/username/weather",
-    featured: true
+    featured: false
   },
   {
     id: 4,
